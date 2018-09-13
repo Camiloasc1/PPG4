@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <title>PPG4</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+<body ng-cloak ng-app="PPG4-App" ng-controller="PPG4-Controller">
+<div class="container">
+    <div class="row">
+        <h1 class="text-center">PPG4</h1>
+        <form>
+            <div class="form-group">
+                <label class="control-label" for="plaintext">Plain Text</label>
+                <textarea class="form-control" rows="5" id="plaintext" ng-model="plaintext"></textarea>
+            </div>
+            <div class="form-group">
+                <label class="control-label" for="ciphertext">Cipher Text</label>
+                <input class="form-control" readonly="true" id="ciphertext" ng-model="ciphertext">
+            </div>
+        </form>
+    </div>
+</div>
+
+<!-- jQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<!-- Bootstrap -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<!-- AngularJS -->
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.7/angular.min.js"></script>
+<!-- AES-JS -->
+<script src="PPG4.js"></script>
+<!-- AES -->
+<script src="APP.js"></script>
+</body>
+</html>
